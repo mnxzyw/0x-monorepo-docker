@@ -4,7 +4,7 @@ WORKDIR /app/0x
 
 RUN apt-get update \
  && DEBIAN_FRONTEND=noninteractive \
- && apt-get install -y libudev-dev build-essential checkinstall libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev \
+    apt-get install -y libudev-dev build-essential checkinstall libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
